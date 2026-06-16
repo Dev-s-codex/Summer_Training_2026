@@ -21,10 +21,12 @@ Ans. A Boolean expression is an expression that evaluates to only one of two val
 
 Q6. Write the syntax of a simple if statement.
 
-Ans. if(cgpa >= 4.0)
-{
+Ans. 
+
+     if(cgpa >= 4.0)
+    {
     cout<<"You have Passed!";
-}
+    }
 
 Q7. What operator is commonly used to test equality?
 
@@ -170,19 +172,19 @@ Q38. How do you check if a year is divisible by 4?
 
 Ans. To check if a year is divisible by 4 we use modulus to divide by 4 and check the remainder as 0.
 
-if(year % 4 == 0)
-{
+    if(year % 4 == 0)
+    {
     cout<<"Divisible by 4";
-}
+    }
 
 Q39. What is a leap year?
 
 Ans. a year is a leap year if it is divisible by 4
 
-if(year % 4 == 0)
-{
+    if(year % 4 == 0)
+    {
     cout<<"It is a leap year.";
-}
+    }
 
 Q40. What is the first condition for a leap year?
 
@@ -191,14 +193,15 @@ Ans.The first condition for a leap year is, it should be divisible by 4.
 Q41. How do you find the largest of two numbers?
 
 Ans. Compare the two numbers using the greater-than operator.
-if(a > b)
-{
+  
+    if(a > b)
+    {
     cout<<"A is Largest";
-}
-else
-{
+    }
+    else
+    {
     cout<<"B is Largest";
-}
+    }
 
 Q42. How do you find the largest of three numbers?
 
@@ -233,11 +236,13 @@ Ans. An if-else-if ladder is used to test multiple conditions one after another.
 
 Q44. What is the difference between if and switch?
 
-Ans.        if Statement	                                   switch Statement
-Can test complex conditions	                          Tests only fixed values
-Uses relational and logical operators	              Uses case labels
-Suitable for ranges	                                  Suitable for multiple constant choices
-More flexible	                                      More readable for many options
+Ans.  
+
+        if Statement	                                   switch Statement
+    Can test complex conditions	                          Tests only fixed values
+    Uses relational and logical operators	              Uses case labels
+    Suitable for ranges	                                  Suitable for multiple constant choices
+    More flexible	                                      More readable for many options
 
 Q45. Can switch use ranges directly?
 
@@ -261,20 +266,20 @@ Q49. Give one real-life example of a conditional statement.
 
 Ans.Travel example 
 
-if(Money > 100)
-{
+    if(Money > 100)
+    {
     cout<<"Book a Taxi.";
-}
-else
-{
+    }
+    else
+    {
     cout<<"Go by Walking.";
-}
+    }
 
 Q50. Name four conditional structures covered. 
 
 Ans. The four common conditional structures are:
 
-if statement
-if-else statement
-if-else-if ladder
-switch statement
+    if statement
+    if-else statement
+    if-else-if ladder
+    switch statement

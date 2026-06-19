@@ -1,0 +1,75 @@
+ ; if ($?) { gcc problem3.c -o problem3 } ; if ($?) { .\problem3 }
+problem3.c: In function 'main':
+problem3.c:8:15: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int age = "Twenty";
+               ^~~~~~~~
+problem3.c:14:18: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     char grade = "A";
+                  ^~~
+problem3.c:22:21: error: 'score' undeclared (first use in this function)
+     total = marks + score;
+                     ^~~~~
+problem3.c:22:21: note: each undeclared identifier is reported only once for each function it appears in
+problem3.c:25:9: error: redefinition of 'x'
+     int x = 20;
+         ^
+problem3.c:24:9: note: previous definition of 'x' was here
+     int x = 10;
+         ^
+problem3.c:27:9: error: lvalue required as left operand of assignment
+     100 = x;
+         ^
+problem3.c:39:8: error: array subscript is not an integer
+     arr[2.5] = 100;
+        ^
+problem3.c:45:14: error: too few arguments to function 'add'
+     result = add(10);
+              ^~~
+problem3.c:3:5: note: declared here
+ int add(int a, int b);
+     ^~~
+problem3.c:51:11: error: too few arguments to function 'average'
+     avg = average(10,20);
+           ^~~~~~~
+problem3.c:4:7: note: declared here
+ float average(int a, int b, int c);
+       ^~~~~~~
+problem3.c:55:23: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int temperature = "35";
+                       ^~~~
+problem3.c:59:22: error: incompatible types when initializing type 'float' using type 'char *'
+     float discount = "10.5";
+                      ^~~~~~
+problem3.c:65:10: error: assignment to expression with array type
+     name = "Robil";
+          ^
+problem3.c:71:13: error: 'totalMarks' undeclared (first use in this function)
+     count = totalMarks + 10;
+             ^~~~~~~~~~
+problem3.c:86:19: error: 'c' undeclared (first use in this function)
+     sum = add(a,b,c);
+                   ^
+problem3.c:86:11: error: too many arguments to function 'add'
+     sum = add(a,b,c);
+           ^~~
+problem3.c:3:5: note: declared here
+ int add(int a, int b);
+     ^~~
+problem3.c:105:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int size = "Large";
+                ^~~~~~~
+problem3.c:115:9: error: array subscript is not an integer
+     arr2["five"] = 100;
+         ^
+problem3.c:125:9: error: case label does not reduce to an integer constant
+         case "2":
+         ^~~~
+problem3.c:132:19: warning: implicit declaration of function 'multiply' [-Wimplicit-function-declaration]
+     finalResult = multiply(10,20);
+                   ^~~~~~~~
+problem3.c:157:20: error: 'value' undeclared (first use in this function)
+     printf("%d\n", value);
+                    ^~~~~
+problem3.c:159:22: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int employeeId = "EMP101";
+                      ^~~~~~~~

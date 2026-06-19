@@ -1,0 +1,39 @@
+Enter a number: 5
+Number is Even
+
+Enter marks: 80
+Grade A
+
+Enter year: 2026
+Not Leap Year
+
+Enter age: 18
+Eligible for Voting
+
+Smaller Number = 20
+
+Largest Number = 10
+
+Average = 83.00
+
+Circle Area = 307.72
+
+Bonus = 1000.00
+
+May
+
+Not Prime
+
+Final Amount = 5005.00
+
+Sum = 10
+
+Cold Weather
+
+Average Performance
+
+Rectangle Area = 15
+
+Fail
+
+Program Completed Successfully

@@ -1,0 +1,24 @@
+ if ($?) { gcc problem2.c -o problem2 } ; if ($?) { .\problem2 }
+problem2.c: In function 'main':
+problem2.c:10:5: error: expected ',' or ';' before 'int'
+     int result;
+     ^~~
+problem2.c:22:5: error: expected ')' before '{' token
+     {
+     ^
+problem2.c:35:9: error: 'result' undeclared (first use in this function)
+         result = num1 * num2;
+         ^~~~~~
+problem2.c:35:9: note: each undeclared identifier is reported only once for each function it appears in
+problem2.c:51:5: error: expected ')' before '{' token
+     {
+     ^
+problem2.c:101:18: warning: missing terminating ' character
+     char grade = 'A;
+                  ^
+problem2.c:101:18: error: missing terminating ' character
+     char grade = 'A;
+                  ^~~
+problem2.c:141:1: error: expected declaration or statement at end of input
+ }
+ ^

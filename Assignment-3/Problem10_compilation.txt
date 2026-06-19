@@ -1,0 +1,37 @@
+if ($?) { gcc problem10.c -o problem10 } ; if ($?) { .\problem10 }
+problem10.c: In function 'main':
+problem10.c:15:5: error: expected ',' or ';' before 'int'
+     int marks = "90";loads\Assignment 3> 
+     ^~~
+problem10.c:22:14: error: too few arguments to function 'add'
+     result = add(a);
+              ^~~
+problem10.c:5:5: note: declared here
+ int add(int a, int b);
+     ^~~
+problem10.c:31:20: error: 'score' undeclared (first use in this function)
+     printf("%d\n", score);
+                    ^~~~~
+problem10.c:31:20: note: each undeclared identifier is reported only once for each function it appears in
+problem10.c:47:10: error: assignment to expression with array type
+     city = "Delhi";
+          ^
+problem10.c:102:11: error: too few arguments to function 'average'
+     avg = average(70,80);
+           ^~~~~~~
+problem10.c:6:7: note: declared here
+ float average(int a, int b, int c);
+       ^~~~~~~
+problem10.c:133:5: warning: implicit declaration of function 'calculateSalary' [-Wimplicit-function-declaration]
+     calculateSalary();
+     ^~~~~~~~~~~~~~~
+problem10.c:148:13: error: expected ':' or '...' before 'printf'
+             printf("One\n");
+             ^~~~~~
+problem10.c:158:18: warning: multi-character character constant [-Wmultichar]
+     char grade = 'AB';
+                  ^~~~
+problem10.c:158:18: warning: overflow in implicit constant conversion [-Woverflow]
+problem10.c:191:5: error: continue statement not within a loop
+     continue;
+     ^~~~~~~~

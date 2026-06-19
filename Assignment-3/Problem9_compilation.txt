@@ -1,0 +1,13 @@
+problem9.c: In function 'main':ignment 3> 
+problem9.c:116:10: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     pptr = &value;
+          ^
+problem9.c:124:5: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+     strcpy(name,"Programming");
+     ^~~~~~
+problem9.c:124:5: warning: incompatible implicit declaration of built-in function 'strcpy'
+problem9.c:124:5: note: include '<string.h>' or provide a declaration of 'strcpy'
+problem9.c:168:7: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     p = matrix;
+       ^
+1528349827

@@ -1,0 +1,2 @@
+if ($?) { gcc problem5.c -o problem5 } ; if ($?) { .\problem5 }
+Runtime Error Practice Program

@@ -1,0 +1,32 @@
+problem8.c: In function 'main':
+problem8.c:17:14: error: too few arguments to function 'add'
+     result = add(num1);
+              ^~~
+problem8.c:3:5: note: declared here
+ int add(int a, int b);
+     ^~~
+problem8.c:23:11: error: too few arguments to function 'average'
+     avg = average(70,80);
+           ^~~~~~~
+problem8.c:4:7: note: declared here
+ float average(int a, int b, int c);
+       ^~~~~~~
+problem8.c:66:5: warning: implicit declaration of function 'calculateGrade' [-Wimplicit-function-declaration]
+     calculateGrade(marks);
+     ^~~~~~~~~~~~~~
+problem8.c:72:12: warning: implicit declaration of function 'circleArea' [-Wimplicit-function-declaration]
+     area = circleArea(5);
+            ^~~~~~~~~~
+problem8.c:80:13: warning: implicit declaration of function 'sumArray' [-Wimplicit-function-declaration]
+     total = sumArray();
+             ^~~~~~~~
+problem8.c:86:5: warning: implicit declaration of function 'displayResult' [-Wimplicit-function-declaration]
+     displayResult();
+     ^~~~~~~~~~~~~
+problem8.c: In function 'simpleInterest':
+problem8.c:155:5: warning: 'return' with no value, in function returning non-void
+     return;
+     ^~~~~~
+problem8.c:149:7: note: declared here
+ float simpleInterest(float p, float r, float t)
+       ^~~~~~~~~~~~~~

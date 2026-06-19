@@ -1,0 +1,13 @@
+problem7.c: In function 'main':
+problem7.c:58:10: error: assignment to expression with array type
+     city = "Delhi";
+          ^
+problem7.c:119:22: warning: initializer-string for array of chars is too long
+     char email[15] = "student@gmail.com";
+                      ^~~~~~~~~~~~~~~~~~~
+problem7.c:136:24: warning: initializer-string for array of chars is too long
+     char subject[10] = "Programming";
+                        ^~~~~~~~~~~~~
+problem7.c:213:23: warning: initializer-string for array of chars is too long
+     char section[3] = "IT-A";
+                       ^~~~~~

@@ -1,0 +1,237 @@
+//Gate Questions related to function and recursion.
+Q1.  What is the output?
+#include <iostream>
+using namespace std;
+
+void fun()
+{
+    static int x = 0;
+    x++;
+    cout << x << " ";
+}
+
+int main()
+{
+    fun();
+    fun();
+    fun();
+}
+
+Ans. 1 2 3
+A static variable is created only once and retains its value throughout the program.
+
+Q2.What is the output of fun(4)?
+
+ void fun(int n)
+{
+    if(n == 0)
+        return;
+
+    cout << n;
+    fun(n-1);
+    cout << n;
+}
+
+Ans. 43211234
+
+Q3. Find fun(4).
+int fun(int n)
+{
+    if(n==0)
+        return 0;
+
+    return n + fun(n-1);
+}
+
+Ans. 4 + 3 + 2 + 1 + 0 = 10
+
+Q4. How many times is fun() called when fun(5) is executed?
+void fun(int n)
+{
+    if(n<=0)
+        return;
+
+    fun(n-1);
+}
+
+Ans. Calls:
+
+fun(5)
+fun(4)
+fun(3)
+fun(2)
+fun(1)
+fun(0)
+
+Total = 6 calls
+
+Q5. Find fun(4,3).
+int fun(int a, int b)
+{
+    if(b==0)
+        return 0;
+
+    return a + fun(a,b-1);
+}
+
+Ans.4+4+4=12
+
+Q6. Output of A(3)?
+void B(int);
+
+void A(int n)
+{
+    if(n<=0) return;
+    cout<<"A";
+    B(n-1);
+}
+
+void B(int n)
+{
+    if(n<=0) return;
+    cout<<"B";
+    A(n-1);
+}
+
+Ans. ABA
+
+Q. 7
+#include <iostream>
+using namespace std;
+
+int add(int a,int b)
+{
+    return a+b;
+}
+
+int main()
+{
+    int (*p)(int,int)=add;
+    cout<<p(2,3);
+}
+
+Ans. p stores address of function add.
+5
+
+Q8. Find fun(4).
+int fun(int n)
+{
+    if(n<=1)
+        return 1;
+
+    return fun(n-1)+fun(n-1);
+}
+
+Ans. 
+f(0)=1
+f(1)=1
+f(2)=2
+f(3)=4
+f(4)=8
+
+Q9. Find fib(6)
+int fib(int n)
+{
+    if(n<=1)
+        return n;
+
+    return fib(n-1)+fib(n-2);
+}
+
+Ans. 0 1 1 2 3 5 8
+
+Q10. Maximum stack depth for fun(100)?
+void fun(int n)
+{
+    if(n==0)
+        return;
+
+    fun(n-1);
+}
+
+Ans. 101
+Calls from 100 down to 0
+
+Q11. Find fun(5)
+int fun(int n)
+{
+    if(n==1)
+        return 1;
+
+    return n*fun(n-1);
+}
+
+Ans. 5×4×3×2×1 = 120
+
+Q12. #include <iostream>
+using namespace std;
+
+void change(int &x)
+{
+    x = 50;
+}
+
+int main()
+{
+    int a = 10;
+    change(a);
+    cout << a;
+}
+
+Ans.  x becomes another name for a
+a → 10
+x → same memory location
+
+so, x=50 then
+a also beomes 50
+
+Q13. Which is Tail Recursive?
+A) return n*fun(n-1);
+B) return fun(n-1);
+C) return fun(n-1)+1;
+D) return fun(n-1)+fun(n-2);
+
+Ans. B
+Tail recursion means the recursive call must be the last operation performed.
+here, Nothing remains after the recursive call.
+
+Q14. Find fun(16)
+int fun(int n)
+{
+    if(n==1)
+        return 0;
+
+    return 1 + fun(n/2);
+}
+
+Ans. fun(16)
+= 1 + fun(8)
+= 1 + 1 + fun(4)
+= 1 + 1 + 1 + fun(2)
+= 1 + 1 + 1 + 1 + fun(1)
+= 4
+
+The function counts how many times n can be divided by 2 before reaching 1.
+
+Q15. What is the output of the following C++ program?
+#include <iostream>
+using namespace std;
+void fun(int n, int &x)
+{
+    if(n <= 0)
+        return;
+    x++;
+    fun(n - 1, x);
+    x++;
+}
+int main()
+{
+    int a = 0;
+    fun(3, a);
+    cout << a;
+    return 0;
+}
+
+Ans. 6
+The parameter x is passed by reference.
+Therefore, every modification of x directly changes the original variable a
